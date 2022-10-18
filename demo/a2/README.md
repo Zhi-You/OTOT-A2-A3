@@ -141,10 +141,10 @@ spec:
     spec:
       containers:
         - name: backend
-          image: nginx:latest
+          image: nginx:latest   // push my own A1 image into dockerhub (without nginx) and specify the tag here
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 80     // 8080
           resources:
             limits:
               cpu: 40m
